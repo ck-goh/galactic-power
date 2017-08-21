@@ -1,0 +1,27 @@
+.formbox {
+    width: 80vw;
+    margin-top: 2em;
+}
+
+.formrow {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2em 0;
+}
+
+.formrow input, .formrow select {
+    color: #222;
+}
+
+.formrow>* {
+    flex: 1 0 10%;
+    margin: 0 0.5em;
+}
+
+.formrow div input {
+    width: calc(100% - 2em);
+}
+
+.formrow output {
+    padding-left: 0.5em;
+}

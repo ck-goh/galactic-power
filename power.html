@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+    <title>Power</title>
+    <meta charset=UTF-8>
+    <!-- http://getbootstrap.com/customize/?id=a3a6a73852b16c602965b0904aaf5d9e -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"> 
+    <link rel="stylesheet" href="power.css">
+</head>
+<body>
+  <form class="container formbox">
+
+    <div class="formrow">
+      <div>&nbsp;</div>
+      <label for="level">Level 85</label>
+      <input id="level" type="range" value="85" min="1" max="85">
+      <div>&nbsp;</div>
+      <label for="rarity">Rarity ⭑⭑⭑⭑⭑⭑⭑</label>
+      <input id="rarity" type="range" value="7" min="1" max="7">
+      <div>&nbsp;</div>
+    </div>
+
+    <div class="formrow">
+      <label>Mod stars</label>
+      <select class="form-control" id="mod_stars_1">
+        <option label="-none-" value="-1">
+        <option label="⭑" value="0">
+        <option label="⭑⭑" value="1">
+        <option label="⭑⭑⭑" value="2">
+        <option label="⭑⭑⭑⭑" value="3">
+        <option label="⭑⭑⭑⭑⭑" value="4" selected>
+      </select>
+      <select class="form-control" id="mod_stars_2">
+        <option label="-none-" value="-1">
+        <option label="⭑" value="0">
+        <option label="⭑⭑" value="1">
+        <option label="⭑⭑⭑" value="2">
+        <option label="⭑⭑⭑⭑" value="3">
+        <option label="⭑⭑⭑⭑⭑" value="4" selected>
+      </select>
+      <select class="form-control" id="mod_stars_3">
+        <option label="-none-" value="-1">
+        <option label="⭑" value="0">
+        <option label="⭑⭑" value="1">
+        <option label="⭑⭑⭑" value="2">
+        <option label="⭑⭑⭑⭑" value="3">
+        <option label="⭑⭑⭑⭑⭑" value="4" selected>
+      </select>
+      <select class="form-control" id="mod_stars_4">
+        <option label="-none-" value="-1">
+        <option label="⭑" value="0">
+        <option label="⭑⭑" value="1">
+        <option label="⭑⭑⭑" value="2">
+        <option label="⭑⭑⭑⭑" value="3">
+        <option label="⭑⭑⭑⭑⭑" value="4" selected>
+      </select>
+      <select class="form-control" id="mod_stars_5">
+        <option label="-none-" value="-1">
+        <option label="⭑" value="0">
+        <option label="⭑⭑" value="1">
+        <option label="⭑⭑⭑" value="2">
+        <option label="⭑⭑⭑⭑" value="3">
+        <option label="⭑⭑⭑⭑⭑" value="4" selected>
+      </select>
+      <select class="form-control" id="mod_stars_6">
+        <option label="-none-" value="-1">
+        <option label="⭑" value="0">
+        <option label="⭑⭑" value="1">
+        <option label="⭑⭑⭑" value="2">
+        <option label="⭑⭑⭑⭑" value="3">
+        <option label="⭑⭑⭑⭑⭑" value="4" selected>
+      </select selected>
+    </div>
+
+    <div class="formrow">
+      <label>Mod level</label>
+      <div><input type="range" id="mod_level_1" min="1" max="15" value="15" oninput="mod_level_1_val.value = mod_level_1.value">
+        <output id="mod_level_1_val">15</output></div>
+      <div><input type="range" id="mod_level_2" min="1" max="15" value="15" oninput="mod_level_2_val.value = mod_level_2.value">
+        <output id="mod_level_2_val">15</output></div>
+      <div><input type="range" id="mod_level_3" min="1" max="15" value="15" oninput="mod_level_3_val.value = mod_level_3.value">
+        <output id="mod_level_3_val">15</output></div>
+      <div><input type="range" id="mod_level_4" min="1" max="15" value="15" oninput="mod_level_4_val.value = mod_level_4.value">
+        <output id="mod_level_4_val">15</output></div>
+      <div><input type="range" id="mod_level_5" min="1" max="15" value="15" oninput="mod_level_5_val.value = mod_level_5.value">
+        <output id="mod_level_5_val">15</output></div>
+      <div><input type="range" id="mod_level_6" min="1" max="15" value="15" oninput="mod_level_6_val.value = mod_level_6.value">
+        <output id="mod_level_6_val">15</output></div>
+    </div>
+
+    <div class="formrow">
+      <div>&nbsp;</div>
+      <label for="geartier">Gear tier</label>
+      <select id="geartier">
+        <option label="Tier I" value="1">
+        <option label="Tier II" value="2">
+        <option label="Tier III" value="3">
+        <option label="Tier IV" value="4">
+        <option label="Tier V" value="5">
+        <option label="Tier VI" value="6">
+        <option label="Tier VII" value="7">
+        <option label="Tier VIII" value="8">
+        <option label="Tier IX" value="9">
+        <option label="Tier X" value="10">
+        <option label="Tier XI" value="11" selected>
+        <!-- option label="Tier XII" value="12" -->
+      </select>
+      <div>&nbsp;</div>
+      <label for="gearslots">Filled slots</label>
+      <div><input id="gearslots"type="range" value="4" min="0" max="6" oninput="gearslots_out.value=gearslots.value">
+        <output id="gearslots_out">4</div>
+      <div>&nbsp;</div>
+    </div>
+
+    <div class="formrow">
+      <label>Abilities</label>
+      <select class="form-control" id="ability_1">
+        <option label="-none-" value="-1">
+        <option label="1" value="0">
+        <option label="2" value="1">
+        <option label="3" value="2">
+        <option label="4" value="3">
+        <option label="5" value="4">
+        <option label="6" value="5">
+        <option label="7" value="6">
+        <option label="Omega" value="7" selected>
+        <option label="Zeta" value="8">
+      </select>
+      <select class="form-control" id="ability_2">
+        <option label="-none-" value="-1">
+        <option label="1" value="0">
+        <option label="2" value="1">
+        <option label="3" value="2">
+        <option label="4" value="3">
+        <option label="5" value="4">
+        <option label="6" value="5">
+        <option label="7" value="6">
+        <option label="Omega" value="7" selected>
+        <option label="Zeta" value="8">
+      </select>
+      <select class="form-control" id="ability_3">
+        <option label="-none-" value="-1">
+        <option label="1" value="0">
+        <option label="2" value="1">
+        <option label="3" value="2">
+        <option label="4" value="3">
+        <option label="5" value="4">
+        <option label="6" value="5">
+        <option label="7" value="6">
+        <option label="Omega" value="7" selected>
+        <option label="Zeta" value="8">
+      </select>
+      <select class="form-control" id="ability_4">
+        <option label="-none-" value="-1">
+        <option label="1" value="0">
+        <option label="2" value="1">
+        <option label="3" value="2">
+        <option label="4" value="3">
+        <option label="5" value="4">
+        <option label="6" value="5">
+        <option label="7" value="6">
+        <option label="Omega" value="7">
+        <option label="Zeta" value="8" selected>
+      </select>
+      <select class="form-control" id="ability_5">
+        <option label="-none-" value="-1">
+        <option label="1" value="0">
+        <option label="2" value="1">
+        <option label="3" value="2">
+        <option label="4" value="3">
+        <option label="5" value="4">
+        <option label="6" value="5">
+        <option label="7" value="6">
+        <option label="Omega" value="7">
+        <option label="Zeta" value="8" selected>
+      </select>
+      <select class="form-control" id="ability_6">
+        <option label="-none-" value="-1">
+        <option label="1" value="0">
+        <option label="2" value="1">
+        <option label="3" value="2">
+        <option label="4" value="3">
+        <option label="5" value="4">
+        <option label="6" value="5">
+        <option label="7" value="6">
+        <option label="Omega" value="7">
+        <option label="Zeta" value="8" selected>
+      </select>
+    </div>
+
+    <div class="formrow">&nbsp;</div>
+
+    <div class="formrow">
+      <label>Power</label>
+      <div>Level: <output id="power_level">0</output></div>
+      <div>Rarity: <output id="power_rarity">0</output></div>
+      <div>Mods: <output id="power_mods">0</output></div>
+      <div>Gear: <output id="power_gear">0</output></div>
+      <div>Abilities: <output id="power_abilities">0</output></div>
+      <div><b>Total:</b> <output id="power_total">0</output></div>
+    </div>
+
+  </form>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="power.js"></script>
+</body>
